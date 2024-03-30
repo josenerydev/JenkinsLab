@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jenkinslab:
+    image: ${DOCKER_REGISTRY-}jenkinslab
+    build:
+      context: .
+      dockerfile: JenkinsLab/Dockerfile
